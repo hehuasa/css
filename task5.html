@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>task5</title>
+    <style>
+        body{font-size: 62.5%;padding: 0;margin: 0}
+        header{position:fixed ;height: 4.8em;width: 100%;background: #5fc0cd;z-index:2;}
+        .back{display: inline-block;height:4.8em;width: 30%;color: white;overflow: hidden}
+        .bottom{height: 100%;width: 100%;border: none;color:white;background: #5fc0cd;font-size: 4em;text-align: left}
+        .zhuye{display: inline-block; height:4.8em;width: 40%;  line-height: 4.8em;font-family: "Microsoft YaHei", sans-serif;color: white;text-align:center;overflow: hidden}
+
+
+        .beijinqiang{position:absolute;display: inline-block;top: 4.8em;;height: 19.2em;line-height:19.2em;width: 100% }
+        .beijinqiang img{width: 100%;height: 100%;display: block}
+        .touxiang{display: inline-block;position: absolute;top:0;float: left;height: 19.2em;line-height: 19.2em;margin: 0 1.8em}
+        .touxiang img{max-width: 60%;max-height: 60%;height:auto; vertical-align: middle;display: inline-block;}
+        .gerenxinxi{display: inline-block;position:absolute;top: 8.7em;left: 12.6em;right: 0;height:19.2em;line-height:1.5em;width: 12em;padding: 0;
+            font-family: "Microsoft YaHei", sans-serif;color: white; text-align: left; }
+        .text{font-size: 2em;vertical-align: middle}
+        .text1{font-size: 1em;vertical-align: middle}
+        .location{display:  inline-block; vertical-align: middle}
+        .location img{display: inline-block;max-width: 80%;max-height: 80%; vertical-align: middle}
+
+        .userinfo{position:absolute;top: 24em;height: 30em;width: 100%;;font-family: "Microsoft YaHei", sans-serif;margin-bottom: 4em;}
+        .userbox{display: inline-block;width: 100%;height: 4em;border-bottom:0.1em solid #e1e5e7;line-height: 4em;min-width: 32em;}
+        .userbox1{display: inline-block;border-left: 0.2em solid #5fc0cd ;padding: 0 1em;margin: 1em;line-height: 1em}
+        .userbox2{display: inline-block;width: 8em;height:auto;padding:0 1em ;line-height: 1em;vertical-align: middle}
+        .userbox3{display: inline-block;width: 8em;padding:0 1em ;margin: 1em;line-height: 1em;border-right:0.1em solid #e1e5e7;color: #e1e5e7;vertical-align: middle }
+        .userbox4{;display: inline-block;width: 50%;min-width: 16em;padding: 1.5em 1em ;line-height: 1em;vertical-align: middle}
+
+        .baoguo{height: 100%;width: 100%;position: relative}
+        .zhanwei{position:fixed;height: 4em;bottom:0;width: 100%;margin-bottom: 1em}
+         footer{position:fixed;height: 4em;bottom:0;width: 100%;margin-bottom: 1em}
+        .box1{display: inline-block;margin:0.5%;width: 49%;height: 100%;float: left }
+        .box2{display: inline-block;margin:0.5%;width:49%;height: 100%;float: right;}
+        .bottom1{display: inline-block;height: 100%;width: 100%;border: 0.2em solid #5fc0cd;color:#5fc0cd;background:white;border-radius:0.5em }
+        .bottom2{display: inline-block;height: 100%;;width: 100%;border: none;color:white;background: #5fc0cd;border-radius:0.5em }
+    </style>
+</head>
+<body>
+<header>
+    <span class="back"><input type="button" value="<" class="bottom"></span>
+    <span class="zhuye">个人主页</span>
+</header>
+
+
+<main>
+    <div class="beijinqiang"><img src="img/background.png">
+        <span class="touxiang"> <img src="img/touxiang.png"></span>
+        <span class="gerenxinxi">
+            <span class="text">高素雅&nbsp;&nbsp;&nbsp;&nbsp;51岁<br></span>
+            <span class="location"><img src="img/location.png"></span>
+            <span class="text1">北京.通州.果园</span>
+        </span>
+    </div>
+   <div class="userinfo" >
+       <div class="userbox">
+       <div class="userbox1"><span class>专业技能</span></div>
+       </div>
+       <div class="userbox">
+           <div class="userbox2">
+           <span class="container"> <span class="glyphicon glyphicon-star-empty" style="color: pink"></span>住家</span></div>
+       <div class="userbox2">
+           <span class="container"> <span class="glyphicon glyphicon-star-empty" style="color: pink"></span>不含餐</span></div>
+       </div>
+       <div class="userbox">
+           <div class="userbox3"><span>从业年限</span></div>
+           <div class="userbox4"><span>0~3年</span> </div>
+       </div>
+       <div class="userbox">
+           <div class="userbox3"><span>工作时间</span></div>
+           <div class="userbox4"><span>全天</span> </div>
+       </div>
+       <div class="userbox">
+           <div class="userbox3"><span>服务价格</span></div>
+           <div class="userbox4"><span>25元/小时</span> </div>
+       </div>
+       <div class="userbox" style="height: auto">
+           <div class="userbox3"><span>自我介绍</span></div>
+           <div class="userbox4"><span>可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人</span> </div>
+       </div>
+ </div>
+    <div class="zhanwei"></div>
+</main>
+
+<div class="baoguo">
+    <div class="zhanwei"></div>
+    <footer>
+    <div class="box1">
+    <input type="button" value="留言" class="bottom1">
+    </div>
+    <div class="box2">
+    <input type="button" value="电话联系" class="bottom2">
+    </div>
+    </footer>
+</div>
+</body>
+</html>
