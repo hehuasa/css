@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum=1.0,user-scalable=no">
+    <script src="bootstrap/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="bootstrap/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap/3.3.6/bootstrap.js"></script>
+    <title>投票</title>
+    <style>
+        body{font-size:62.5%;padding-top: 12rem;padding-bottom: 6rem;text-align: center;}
+
+        .h-nav{border: none;max-width: 64rem;width: 100%;text-align: center;margin: 0 auto}
+        .h-box{height: 5rem;width: 100%;max-width: 64rem;display: inline-block;background: #29bde0;line-height: 5rem;vertical-align: middle;text-align: center}/*header的第一个盒子*/
+        .h-box1-1{float: left;display: inline-block;width: 29.5%;text-align: left;}/*header的第一个盒子中左侧盒子*/
+        .h-box1-2{height: 100%;display: inline-block;width: 40%;text-align: center;color: white;font-size: 2rem;}/*header的第一个盒子中部侧盒子*/
+        .h-box1-3{float: right;display: inline-block;width: 29.5%;text-align: right;}/*header的第一个盒子中右侧盒子*/
+        .h-box2{height: 4rem;width: 100%;max-width: 64rem;display: inline-block;line-height: 4rem;text-align: left;padding-left: 4rem;background: #b9e9f5;font-size: 1.5rem}/*header的第二个盒子*/
+        .h-box3{position: relative;height: 3rem;width: 100%;max-width: 64rem;display: inline-block;line-height: 3rem;text-align: left;padding-left: 4rem;background: #29bde0;color: white}/*header的第三个盒子*/
+        .h-bt-pic{height: 2rem}/*header各按钮的图片样式*/
+        .h-box3-btn{display: inline-block;line-height: 3rem;position: absolute;right: 1rem}
+
+        main{background: #29bde0;max-width: 64rem;border: none;height: 100%;width: 100%;margin: 0 auto }
+        .m-container{display: inline-block;height: 8rem;margin: 1rem 0;max-width: 64rem;width: 100%}/*main栅格外的盒子样式*/
+        .m-container-box{height: auto;width: 6rem;background: #f5c97b;margin: 0 auto;text-align:center;}/*main栅格中的大盒子样式*/
+        .m-container-box-1{height: 4.5rem;width: 6rem;border: 0.2rem solid white ;border-bottom:none;display: inline-block;line-height: 4.5rem}/*main栅格大盒子中的盒子*/
+        .m-container-box-2{height: 1.5rem;width: 6rem;background: #83b09a;border: 0.2rem solid white ;border-top: none;color: black;line-height: 1.5rem;}/*main栅格大盒子中的盒子*/
+        .m-container-box-3{background: white;border: none;height: 1rem;width: 1rem;float: left;margin:1rem 0.1rem 0 0.35rem;display: inline-block}/*main栅格中鼠标事件弹出元素的布局*/
+        .m-container-box-3-pic{height:100%;width: 100%;vertical-align: top}/*main栅格中鼠标事件弹出元素的样式*/
+
+        footer{width: 100%;margin: 0 auto;text-align: center;}
+        .foot-nav{border: none;max-width: 64rem;width: 100%;text-align: center;margin: 0 auto;background: #29bde0}
+        .foot-nav-box{display: inline-block;max-width: 64rem;height: 3rem;width: 70%;margin: 1.5rem;text-align: center}
+        .foot-nav-bt{background: #f5c97b;color: white;font-size: 2rem;border-radius: 0}
+
+
+        .btn-style{background: none;border: none;height:auto;width: auto}/*用于取消按钮的背景色以及边框*/
+        .triangle4{display:inline-block;position:absolute;left: 4rem;width: 0;height: 0;border: 0.5rem;border-style: solid;border-color: #f00 #ff0 #00f #b9e9f5;}/*header第二个盒子下方的三角形*/
+        .triangle_down{border-color: #b9e9f5 transparent transparent transparent;}/*header第二个盒子下方的三角形*/
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top h-nav">
+            <div class="h-box">
+                <div class="h-box1-1">
+                    <a type="button" class="btn btn-default  btn-style" href="task7-1.html" ><img src="img/menu1-7.png"  class="h-bt-pic">
+                    </a>
+                </div>
+                <div class="h-box1-2">投票
+                </div>
+                <div class="h-box1-3">
+                    <button type="button" class="btn btn-default  btn-style"><img src="img/close-7.png" class="h-bt-pic">
+                    </button>
+                </div>
+            </div>
+            <div class="h-box2">
+                <span>发言讨论结束，请大家投票</span>
+                <a type="button" class="btn btn-default btn-style h-box3-btn" href="task7-3.html" >
+                    <img src="img/button-triangle-7.png" class="h-bt-pic">
+                </a>
+            </div>
+            <div class="h-box3">点击的票数最多人的头像
+                <div class="triangle4 triangle_down"></div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="m-container">
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_1.style.visibility=''" onMouseOut="document.all.menulayer_1.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                    <div class="m-container-box-1">水民</div>
+                    <div class="m-container-box-2">1号</div>
+                <div id="menulayer_1" class="menulayer " style="visibility: hidden">
+                    <div>
+                        <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                        <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                        <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                        <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_2.style.visibility=''" onMouseOut="document.all.menulayer_2.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_2" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_3.style.visibility=''" onMouseOut="document.all.menulayer_3.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_3" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="m-container">
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_4.style.visibility=''" onMouseOut="document.all.menulayer_4.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_4" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_8.style.visibility=''" onMouseOut="document.all.menulayer_8.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_8" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_10.style.visibility=''" onMouseOut="document.all.menulayer_10.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_10" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="m-container">
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_5.style.visibility=''" onMouseOut="document.all.menulayer_5.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_5" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_9.style.visibility=''" onMouseOut="document.all.menulayer_9.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_9" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_11.style.visibility=''" onMouseOut="document.all.menulayer_11.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_11" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="m-container">
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_6.style.visibility=''" onMouseOut="document.all.menulayer_6.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_6" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_7.style.visibility=''" onMouseOut="document.all.menulayer_7.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_7" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4" onMouseOver="document.all.menulayer_12.style.visibility=''" onMouseOut="document.all.menulayer_12.style.visibility='hidden'">
+                    <div  class="m-container-box">
+                        <div class="m-container-box-1">水民</div>
+                        <div class="m-container-box-2">1号</div>
+                        <div id="menulayer_12" class="menulayer " style="visibility: hidden">
+                            <div>
+                                <div class="m-container-box-3" ><img src="img/pen-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/fangdajing-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/zhunxin-7.png" class="m-container-box-3-pic"></div>
+                                <div class="m-container-box-3" ><img src="img/shizi-7.png" class="m-container-box-3-pic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <nav class="navbar-default navbar-fixed-bottom foot-nav">
+            <div class="foot-nav-box">
+            <a type="button" class="btn btn-default btn-block foot-nav-bt" href="task7-3.html">
+                投死
+            </a>
+            </div>
+
+        </nav>
+    </footer>
+
+
+
+
+
+    <audio src="music/财富自由.mp3" autoplay="autoplay" >
+</body>
+</html>
