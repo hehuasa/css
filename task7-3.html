@@ -6,57 +6,24 @@
     <script src="bootstrap/js/jquery/2.0.0/jquery.min.js"></script>
     <link href="bootstrap/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap/3.3.6/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/result.css">
     <title>游戏结果</title>
-    <style>
-        body{padding-top: 5rem}
-
-        .h-nav{height: 5rem;border: none;max-width: 64rem;width: 100%;text-align: center;margin: 0 auto }
-        .h-box{height: 5rem;width: 100%;max-width: 64rem;display: inline-block;background: #29bde0;line-height: 5rem;vertical-align: middle;text-align: center}/*header的盒子*/
-        .h-box1-1{float: left;display: inline-block;width: 30%;text-align: left;}/*header盒子中左侧盒子*/
-        .h-box1-2{height: 100%;display: inline-block;width: 40%;text-align: center;color: white;font-size: 2rem;}/*header盒子中部盒子*/
-        .h-box1-3{float: right;display: inline-block;width:30%;text-align: right}/*header盒子右侧盒子*/
-        .h-bt-pic{height: 2rem}/*header各按钮的图片样式*/
-        .h-bt{background: none;border: none}/*header按钮样式*/
-
-        main{background: #29bde0;max-width: 64rem;height: 100%;width: 100%;margin: 0 auto;text-align: center }
-        .m-box1{display: inline-block;width: 100%;max-width: 64rem;height:12rem;background:#29bde0;border-top: 0.1rem solid #74d4eb;line-height: 12rem;vertical-align: middle;text-align: center}
-        .m-box1-pic{width: 18rem}
-        .m-box2{display: inline-block;width: 80%;max-width: 64rem;height:auto;background:#29bde0;vertical-align: middle;text-align: left;color: #ffc865;font-size: 1.6rem;padding-bottom: 1rem}
-        .m-box3{display: inline-block;width: 80%;max-width: 64rem;height:auto;background:#29bde0;vertical-align: middle;text-align: left;color: #ffffff;font-size: 1.4rem;line-height: 2rem;padding-bottom: 1rem}
-        .m-box4{display: inline-block;width: 100%;max-width: 64rem;height:auto;background:#ffffff;border-bottom: 0.1rem solid #a6a6a6}
-        .m-box4-1{display: inline-block;width: 40%;max-width: 64rem;height:auto;background:#ffffff;vertical-align: middle;text-align: left;font-size: 2rem}
-        .m-box4-2{display: inline-block;width: 20%;max-width: 64rem;height:auto;background:#ffffff;vertical-align: middle;text-align: right;color: #a6a6a6;font-size: 0.8rem}
-        .m-box4-3{display: inline-block;width: 80%;max-width: 64rem;height:auto;background:#ffffff;vertical-align: middle;text-align: left;color: #a6a6a6;font-size: 1rem;padding-bottom: 1rem}
-        .m-box5{display: inline-block;width: 100%;max-width: 64rem;height:auto;background:#ffffff}
-        .m-box5-1{display: inline-block;width: 45%;max-width: 64rem;height:4rem;background:#ffffff;vertical-align: middle;text-align: left;font-size: 2rem;color: #29bde0;line-height: 4rem}
-        .m-box5-2{display: inline-block;width: 45%;max-width: 64rem;height:auto;background:#ffffff;vertical-align: middle;text-align: right;color: #29bde0;font-size: 1rem}
-        .m-box-empty{display: inline-block;width: 20%;}
-
-        footer{width: 100%;margin: 0 auto;text-align: center;}
-        .foot-nav{border: none;max-width: 64rem;width: 100%;height: 5rem;text-align: center;margin: 0 auto;background-color:rgba(41,189,224,0.7)}
-        .foot-nav-box1{display: inline-block;max-width: 64rem;width: 44%;text-align: center;filter:none;;-moz-opacity:1;opacity: 1;position: absolute;top: 1rem;left: 1rem;}
-        .foot-nav-box2{display: inline-block;max-width: 64rem;width: 44%;text-align: center;filter:none;position: absolute;top: 1rem;}
-        .foot-nav-bt1{background: #f66f6f;color: white;font-size: 2rem;line-height: 2rem}
-        .foot-nav-bt2{background: #fbb435;color: white;font-size: 2rem;line-height: 2rem}
-
-
-    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-fixed-top h-nav navbar-default">
-            <div class="h-box">
-                <div class="h-box1-1">
-                    <a type="button" class="btn btn-default h-bt " href="task7-1.html">
-                        <img src="img/house-7.png" class="h-bt-pic">
+            <div class="h-nav-content">
+                <div class="h-nav-content-homepage">
+                    <a type="button" class="btn btn-default h-btn " href="task7-1.html">
+                        <img src="img/house-7.png" class="h-btn-pic">
                     </a>
                 </div>
-                <div class="h-box1-2">
+                <div class="h-nav-content-txt">
                     游戏结果
                 </div>
-                <div class="h-box1-3">
-                    <button type="button" class="btn btn-default h-bt ">
-                        <img src="img/tishi-7.png"  class="h-bt-pic">
+                <div class="h-nav-content-info">
+                    <button type="button" class="btn btn-default h-btn ">
+                        <img src="img/tishi-7.png"  class="h-btn-pic">
                     </button>
                 </div>
             </div>
@@ -64,48 +31,48 @@
     </header>
 
     <main>
-        <div class="m-box1">
-            <img src="img/jiangbei-7.png" class="m-box1-pic">
+        <div class="m-result">
+            <img src="img/jiangbei-7.png" class="m-result-pic">
         </div>
-        <span class="m-box2">
+        <span class="m-prompt">
             太棒了!你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！
         </span>
-        <span class="m-box3">
+        <span class="m-countinfo">
             本次游戏共计用时&nbsp;0&nbsp;小时&nbsp;25&nbsp;分钟<br>
             杀&nbsp;&nbsp;&nbsp;&nbsp;手&nbsp;0&nbsp;人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;警   察&nbsp;1&nbsp;人 &nbsp;&nbsp;&nbsp;&nbsp;   平   民&nbsp;6&nbsp;人<br>
             狙击手&nbsp;0&nbsp;人&nbsp;&nbsp;&nbsp;&nbsp;       医   生&nbsp;1&nbsp;人<br>
             卧底词汇：&nbsp;爱新觉罗<br>
             水民词汇：&nbsp;努尔哈赤
         </span>
-        <span class="m-box4">
-            <span class="m-box4-1">
+        <span class="m-stage-count">
+            <span class="m-stage-count-tittle">
             第1天
         </span>
-        <span class="m-box4-2">
+        <span class="m-stage-count-time">
             0小时07分
         </span>
             <span class="m-box-empty"></span>
-        <span class="m-box4-3">
+        <span class="m-stage-count-text">
             晚上：5号被杀手杀死，5号是水民 <br>  白天：8号被全民投票投死，8号是杀手
         </span>
         </span>
-        <span class="m-box4">
-            <span class="m-box4-1">
+        <span class="m-stage-count">
+            <span class="m-stage-count-tittle">
             第2天
         </span>
-        <span class="m-box4-2">
+        <span class="m-stage-count-time">
             0小时07分
         </span>
             <span class="m-box-empty"></span>
-        <span class="m-box4-3">
+        <span class="m-stage-count-text">
             晚上：5号被杀手杀死，5号是水民 <br>  白天：8号被全民投票投死，8号是杀手
         </span>
         </span>
-        <span class="m-box5">
-            <span class="m-box5-1">
+        <span class="m-stage-otherinfo">
+            <span class="m-stage-otherinfo-tittle">
                 第二天
             </span>
-            <span class="m-box5-2">
+            <span class="m-stage-otherinfo-tittle-time">
                 0小时07分
             </span>
         </span>
@@ -113,13 +80,13 @@
 
     <footer>
         <nav class="navbar-default navbar-fixed-bottom foot-nav">
-            <div class="foot-nav-box1">
-                <a type="button" class="btn btn-default btn-block foot-nav-bt1" href="task7-1.html">
+            <div class="foot-nav-onemoregame">
+                <a type="button" class="btn btn-default btn-block foot-nav-onemoregame-btn" href="task7-1.html">
                     再来一局
                 </a>
             </div>
-            <div class="foot-nav-box2">
-                <button type="button" class="btn btn-default btn-block foot-nav-bt2">
+            <div class="foot-nav-share">
+                <button type="button" class="btn btn-default btn-block foot-nav-share-btn">
                     上传并分享
                 </button>
             </div>
