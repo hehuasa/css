@@ -1,0 +1,29 @@
+body{font-size:62.5%;padding-top: 12rem;padding-bottom: 6rem;text-align: center;}
+
+.headstyle{border: none;max-width: 64rem;width: 100%;text-align: center;margin: 0 auto}
+.h-tittle{height: 5rem;width: 100%;max-width: 64rem;display: inline-block;background: #29bde0;line-height: 5rem;vertical-align: middle;text-align: center}/*header的第一个盒子*/
+.h-tittle-menu{float: left;display: inline-block;width: 29.5%;text-align: left;}/*header的第一个盒子中左侧盒子*/
+.h-tittle-text{height: 100%;display: inline-block;width: 40%;text-align: center;color: white;font-size: 2rem;}/*header的第一个盒子中部侧盒子*/
+.h-tittle-close{float: right;display: inline-block;width: 29.5%;text-align: right;}/*header的第一个盒子中右侧盒子*/
+.h-content{height: 4rem;width: 100%;max-width: 64rem;display: inline-block;line-height: 4rem;text-align: left;padding-left: 4rem;background: #b9e9f5;font-size: 1.5rem}/*header的第二个盒子*/
+.h-annotation{position: relative;height: 3rem;width: 100%;max-width: 64rem;display: inline-block;line-height: 3rem;text-align: left;padding-left: 4rem;background: #29bde0;color: white}/*header的第三个盒子*/
+.h-bt-pic{height: 2rem}/*header各按钮的图片样式*/
+.h-content-btn{display: inline-block;line-height: 3rem;position: absolute;right: 1rem}
+
+main{background: #29bde0;max-width: 64rem;border: none;height: 100%;width: 100%;margin: 0 auto }
+.m-container{display: inline-block;height: 8rem;margin: 1rem 0;max-width: 64rem;width: 100%}/*main栅格外的盒子样式*/
+.m-container-option{height: auto;width: 6rem;background: #f5c97b;margin: 0 auto;text-align:center;}/*main栅格中的大盒子样式*/
+.m-container-option-role{height: 4.5rem;width: 6rem;border: 0.2rem solid white ;border-bottom:none;display: inline-block;line-height: 4.5rem}/*main栅格大盒子中的盒子*/
+.m-container-option-id{height: 1.5rem;width: 6rem;background: #83b09a;border: 0.2rem solid white ;border-top: none;color: black;line-height: 1.5rem;}/*main栅格大盒子中的盒子*/
+.m-container-option-action{background: white;border: none;height: 1rem;width: 1rem;float: left;margin:1rem 0.1rem 0 0.35rem;display: inline-block}/*main栅格中鼠标事件弹出元素的布局*/
+.m-container-option-action-pic{height:100%;width: 100%;vertical-align: top}/*main栅格中鼠标事件弹出元素的样式*/
+
+footer{width: 100%;margin: 0 auto;text-align: center;}
+.foot-nav{border: none;max-width: 64rem;width: 100%;text-align: center;margin: 0 auto;background: #29bde0}
+.foot-nav-warp{display: inline-block;max-width: 64rem;height: 3rem;width: 70%;margin: 1.5rem;text-align: center}
+.foot-nav-btn{background: #f5c97b;color: white;font-size: 2rem;border-radius: 0}
+
+
+.btn-style{background: none;border: none;height:auto;width: auto}/*用于取消按钮的背景色以及边框*/
+.triangle4{display:inline-block;position:absolute;left: 4rem;width: 0;height: 0;border: 0.5rem;border-style: solid;border-color: #f00 #ff0 #00f #b9e9f5;}/*header第二个盒子下方的三角形*/
+.triangle_down{border-color: #b9e9f5 transparent transparent transparent;}/*header第二个盒子下方的三角形*/

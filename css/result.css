@@ -1,0 +1,31 @@
+body{padding-top: 5rem}
+
+.h-nav{height: 5rem;border: none;max-width: 64rem;width: 100%;text-align: center;margin: 0 auto }
+.h-nav-content{height: 5rem;width: 100%;max-width: 64rem;display: inline-block;background: #29bde0;line-height: 5rem;vertical-align: middle;text-align: center}/*header的盒子*/
+.h-nav-content-homepage{float: left;display: inline-block;width: 30%;text-align: left;}/*header盒子中左侧盒子*/
+.h-nav-content-txt{height: 100%;display: inline-block;width: 40%;text-align: center;color: white;font-size: 2rem;}/*header盒子中部盒子*/
+.h-nav-content-info{float: right;display: inline-block;width:30%;text-align: right}/*header盒子右侧盒子*/
+.h-btn{background: none;border: none}/*header按钮样式*/
+.h-btn-pic{height: 2rem}/*header各按钮的图片样式*/
+
+main{background: #29bde0;max-width: 64rem;height: 100%;width: 100%;margin: 0 auto;text-align: center }
+.m-result{display: inline-block;width: 100%;max-width: 64rem;height:12rem;background:#29bde0;border-top: 0.1rem solid #74d4eb;line-height: 12rem;vertical-align: middle;text-align: center}
+.m-result-pic{width: 18rem}
+.m-prompt{display: inline-block;width: 80%;max-width: 64rem;height:auto;background:#29bde0;vertical-align: middle;text-align: left;color: #ffc865;font-size: 1.6rem;padding-bottom: 1rem}
+.m-countinfo{display: inline-block;width: 80%;max-width: 64rem;height:auto;background:#29bde0;vertical-align: middle;text-align: left;color: #ffffff;font-size: 1.4rem;line-height: 2rem;padding-bottom: 1rem}
+.m-stage-count{display: inline-block;width: 100%;max-width: 64rem;height:auto;background:#ffffff;border-bottom: 0.1rem solid #a6a6a6}
+.m-stage-count-tittle{display: inline-block;width: 40%;max-width: 64rem;height:auto;background:#ffffff;vertical-align: middle;text-align: left;font-size: 2rem}
+.m-stage-count-time{display: inline-block;width: 20%;max-width: 64rem;height:auto;background:#ffffff;vertical-align: middle;text-align: right;color: #a6a6a6;font-size: 0.8rem}
+.m-stage-count-text{display: inline-block;width: 80%;max-width: 64rem;height:auto;background:#ffffff;vertical-align: middle;text-align: left;color: #a6a6a6;font-size: 1rem;padding-bottom: 1rem}
+.m-stage-otherinfo{display: inline-block;width: 100%;max-width: 64rem;height:auto;background:#ffffff}
+.m-stage-otherinfo-tittle{display: inline-block;width: 45%;max-width: 64rem;height:4rem;background:#ffffff;vertical-align: middle;text-align: left;font-size: 2rem;color: #29bde0;line-height: 4rem}
+.m-stage-otherinfo-tittle-time{display: inline-block;width: 45%;max-width: 64rem;height:auto;background:#ffffff;vertical-align: middle;text-align: right;color: #29bde0;font-size: 1rem}
+.m-box-empty{display: inline-block;width: 20%;}
+
+footer{width: 100%;margin: 0 auto;text-align: center;}
+.foot-nav{border: none;max-width: 64rem;width: 100%;height: 5rem;text-align: center;margin: 0 auto;background-color:rgba(41,189,224,0.7)}
+.foot-nav-onemoregame{display: inline-block;max-width: 64rem;width: 44%;text-align: center;filter:none;;-moz-opacity:1;opacity: 1;position: absolute;top: 1rem;left: 1rem;}
+.foot-nav-share{display: inline-block;max-width: 64rem;width: 44%;text-align: center;filter:none;position: absolute;top: 1rem;}
+.foot-nav-onemoregame-btn{background: #f66f6f;color: white;font-size: 2rem;line-height: 2rem}
+.foot-nav-share-btn{background: #fbb435;color: white;font-size: 2rem;line-height: 2rem}
+

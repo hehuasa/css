@@ -1,0 +1,18 @@
+body{font-size:62.5%;padding-top: 5rem}
+main{background: #f0f0f0;max-width: 64rem;margin: 0 auto;text-align: center;}
+.h-warp{background: #29bde0;max-width:64rem;height:5rem;margin: 0 auto  }/*用于header*/
+.h-warp-btn1{margin: 1rem;border: none;background: #29bde0}/*用于header左侧的菜单按钮*/
+.m-lastgame{position: relative;display: inline-block ;margin: 1rem 2rem 0 2rem;padding: 0;height: auto;width: 80%;max-width: 57rem;border: 0.1rem solid #f0f0f0;
+    font-size:1.5rem;line-height: 4rem;color: #9a9a9a ;background: white}/*用于第一个独立的方框*/
+.m-content{position: relative;margin-top: 1rem;margin-bottom: 4rem;height: auto;width: 80%;max-width: 57rem;
+    text-align: center;display: inline-block ;border: 0.1rem solid #f0f0f0;background: white}/*用于第二个大方框*/
+.m-content-tittle{display: inline-block ;margin:  0 ;height: auto;width: 100%;max-width: 57rem;font-size:1.5rem;color: #fbb435;line-height: 4rem;padding: 0;
+    border-bottom: 0.1rem solid #fde1ae;background: white}/*用于大方框最上方的标题方框*/
+.m-content-version{margin-top: 1rem ;height: 5rem;width: 80%;max-width: 46rem;text-align: center;display: inline-block }/*用于大方框中的几个大按钮*/
+.m-content-annotation{display: inline-block;line-height: 3rem;color:#9a9a9a; font-size:1rem;width: 80%;max-width: 46rem;text-align: center }
+.m-content-pagescroll{display: inline-block;line-height:1.5rem;height: 1.5rem;width: 100%;text-align: center}/*用于大方框底部圆点的框*/
+.m-content-pagescroll-dot{display: inline-block;margin-right: 1rem;height: 0.8rem;width: 0.8rem;border-radius: 100%;background: #f0f0f0}/*用于大方框底部的圆点*/
+.m-lastgame-btn{display: inline-block;position: absolute;top:0;right: 5%;line-height: 4rem;background: none;border: none;}/*用于第一个方框右侧的按钮*/
+.m-content-version-btn{background: #29bde0;height: 100%;;font-size:1.5rem;color: white;display: inline-block;line-height: 3rem }/*用于大方框中的几个大按钮*/
+.m-btn{position: absolute;top: 15.5rem;right: 0.5%;background: none;border: none;}/*用于第二个方框右侧的按钮*/
+.m-btn img{height: 2rem;width: 1rem;background: none;border: none;}/*用于第二个方框右侧的按钮中的图片*/
