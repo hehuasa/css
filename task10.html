@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum=1.0,user-scalable=no">
+    <script src="bootstrap/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="bootstrap/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap/3.3.6/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/task10.css">
+    <link rel="stylesheet" type="text/css" href="css/public-task10.css">
+    <title>homepage</title>
+</head>
+<body>
+    <header>
+        <div class="header-warp">
+            <div class="header-warp-num">
+                客服热线：010-594-78634
+            </div>
+            <div class="header-warp-btn">
+                <div class="btn-group"  style="border: none" role="group" aria-label="web">
+                    <button type="button" class="btn btn-default">登录</button>
+                    <button type="button" class="btn btn-default" >注册</button>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="nav">
+            <button class="btn-default btn-nav" style="margin-right: 15%">关于我们</button>
+            <button class="btn-default btn-nav" >标准箱</button>
+            <button class="btn-default btn-nav">在线定制</button>
+            <button class="btn-default btn-nav">首页</button>
+        </div>
+        <div class="m-warp">
+            <div class="schedule">
+                <div class="schedule-block">
+                    <div class="schedule-pic">
+                        <div class="line-left" style="background: #ff7f02"></div>
+                        <div class="circle" style="background: #ff7f02"></div>
+                        <div class="line-right" style="background: #ff7f02"></div>
+                    </div>
+                    <div class="schedule-text" style="color: #ff7f02">
+                        1.定制纸箱
+                    </div>
+                </div>
+                <div class="schedule-block">
+                    <div class="schedule-pic">
+                        <div class="line-left"></div>
+                        <div class="circle"></div>
+                        <div class="line-right"></div>
+                    </div>
+                    <div class="schedule-text">
+                        2.选择数量
+                    </div>
+                </div>
+                <div class="schedule-block">
+                    <div class="schedule-pic">
+                        <div class="line-left"></div>
+                        <div class="circle"></div>
+                        <div class="line-right"></div>
+                    </div>
+                    <div class="schedule-text">
+                        3.上传附件
+                    </div>
+                </div>
+                <div class="schedule-block">
+                    <div class="schedule-pic">
+                        <div class="line-left"></div>
+                        <div class="circle"></div>
+                        <div class="line-right"></div>
+                    </div>
+                    <div class="schedule-text">
+                        4.确认下单
+                    </div>
+                </div>
+            </div>
+            <div >
+                <span class="form-tittle" >请您按照以下步骤来定制您的纸箱</span>
+            </div>
+            <div class="form-content">
+                <form method="post" action="#">
+                <div class="form-content-box">
+                    <div class="form-content-box-tittle">
+                        <img src="img/box.png">
+                         <span>选择箱型</span>
+                    </div>
+                    <div class="form-content-box-radio box-widest">
+                        <div class="form-detail-box ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-xs detail-btn">查看详情</button>
+                                <button type="button"  class="btn btn-xs dropdown-toggle"
+                                        data-toggle="dropdown" >
+                                    <span class="caret"></span>
+                                </button>
+
+                                <ul class="dropdown-menu nav-lengthwise " role="menu">
+                                    <li><a href="#"> 对口箱形状简介</a></li>
+                                    <li><a href="#">飞机盒形状简介</a></li>
+                                    <li><a href="#">天地盒形状简介</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <input type="radio" name="boxtype" id="A"><label for="A">对口箱</label>
+                        </div>
+                        <div class="col-xs-2">
+                            <input type="radio" name="boxtype" id="B"><label for="B">飞机盒</label>
+                        </div>
+                        <div class="col-xs-2">
+                            <input type="radio" name="boxtype" id="C"><label for="C">飞机盒</label>
+                        </div>
+                    </div>
+                    <div class="form-content-box-radio box-narrowest">
+                        <div class="form-detail-box ">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-xs detail-btn">查看详情</button>
+                                <button type="button"  class="btn btn-xs dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+
+
+                            <ul class="dropdown-menu nav-lengthwise " role="menu">
+                                    <li><a href="#"> 对口箱形状简介</a></li>
+                                    <li><a href="#">飞机盒形状简介</a></li>
+                                    <li><a href="#">天地盒形状简介</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <input type="radio" name="boxtype" id="11"><label for="11">对口箱</label>
+                        </div>
+                        <div class="col-xs-7">
+                            <input type="radio" name="boxtype" id="12"><label for="12">飞机盒</label>
+                        </div>
+                        <div class="col-xs-7">
+                            <input type="radio" name="boxtype" id="13"><label for="13">飞机盒</label>
+                        </div>
+                    </div>
+                </div>
+                    <div class="form-content-ruler">
+                        <div class="form-content-ruler-tittle">
+                            <img src="img/ruler.png">
+                            <span>确定尺寸</span>
+                        </div>
+                        <div class="form-content-ruler-radio ruler-widest" >
+                            <div class="form-detail-ruler">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-xs detail-btn">查看详情</button>
+                                    <button type="button"  class="btn btn-xs dropdown-toggle"
+                                            data-toggle="dropdown" >
+                                        <span class="caret"></span>
+                                    </button>
+
+                                    <ul class="dropdown-menu nav-lengthwise " role="menu">
+                                        <li><a href="#"> 10mm尺寸适用范围</a></li>
+                                        <li><a href="#"> 20mm尺寸适用范围</a></li>
+                                        <li><a href="#"> 30mm尺寸适用范围</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="radio" name="boxtype" id="D"><label for="D"> 外径</label>
+                            </div>
+                            <div class="col-xs-2">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+                            <div class="col-xs-2">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+                            <div class="col-xs-2">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+                            <br>
+                            <div class="col-xs-2">
+                                <input type="radio" name="boxtype" id="E"><label for="E">内径</label>
+                            </div>
+                            <div class="col-xs-2">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+                            <div class="col-xs-2">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+                            <div class="col-xs-2">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+
+                        </div>
+                        <div class="form-content-ruler-radio ruler-narrowest" >
+                            <div class="form-detail-ruler">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-xs detail-btn">查看详情</button>
+                                    <button type="button"  class="btn btn-xs dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+
+                                    <ul class="dropdown-menu nav-lengthwise " role="menu">
+                                        <li><a href="#"> 10mm尺寸适用范围</a></li>
+                                        <li><a href="#"> 20mm尺寸适用范围</a></li>
+                                        <li><a href="#"> 30mm尺寸适用范围</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <input type="radio" name="boxtype" id="21"><label for="21"> 外径</label>
+                            </div>
+                            <div class="col-xs-7">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+                            <div class="col-xs-7">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+                            <div class="col-xs-7">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+                            <br>
+                            <div class="col-xs-7">
+                                <input type="radio" name="boxtype" id="22"><label for="22">内径</label>
+                            </div>
+                            <div class="col-xs-7">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+                            <div class="col-xs-7">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+                            <div class="col-xs-7">
+                                长<input type="text" name="boxtype" class="input-style" >mm
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-content-cut" >
+                        <div class="form-content-box-tittle">
+                            <img src="img/cut.png">
+                            <span>选择材质</span>
+                        </div>
+                        <div class="form-content-box-cut cut-widest">
+                            <div class="form-detail">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-xs detail-btn">查看详情</button>
+                                    <button type="button"  class="btn btn-xs dropdown-toggle"
+                                            data-toggle="dropdown"  >
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu nav-lengthwise " role="menu">
+                                        <li><a href="#">A瓦详情</a></li>
+                                        <li><a href="#"> B瓦详情</a></li>
+                                        <li><a href="#"> E瓦详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="radio" name="boxtype" id="1"><label for="1">A瓦优质</label>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="radio" name="boxtype" id="2"><label for="2">B瓦优质</label>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="radio" name="boxtype" ID="3"><label for="3">E瓦优质</label>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="radio" name="boxtype" ID="4"><label for="4">AB瓦优质</label>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="radio" name="boxtype" ID="5"><label for="5">BE瓦优质</label>
+                            </div>
+
+                        <div class="nextstep">
+                            <button class="nextstep-btn">下一步</button>
+                        </div>
+                    </div>
+                        <div class="form-content-box-cut cut-medium">
+                            <div class="form-detail">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-xs detail-btn">查看详情</button>
+                                    <button type="button"  class="btn btn-xs dropdown-toggle"
+                                            data-toggle="dropdown" >
+                                        <span class="caret"></span>
+                                    </button>
+
+                                    <ul class="dropdown-menu nav-lengthwise " role="menu">
+                                        <li><a href="#">A瓦详情</a></li>
+                                        <li><a href="#"> B瓦详情</a></li>
+                                        <li><a href="#"> E瓦详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" name="boxtype" id="F"><label for="F">A瓦优质</label>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" name="boxtype" id="G"><label for="G">B瓦优质</label>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" name="boxtype" ID="H"><label for="H">E瓦优质</label>
+                            </div>
+                            <br>
+                            <div class="col-xs-3">
+                                <input type="radio" name="boxtype" ID="I"><label for="I">AB瓦优质</label>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="radio" name="boxtype" ID="J"><label for="J">BE瓦优质</label>
+                            </div>
+
+                            <div class="nextstep">
+                                <button class="nextstep-btn">下一步</button>
+                            </div>
+                        </div>
+                        <div class="form-content-box-cut cut-narrowest">
+                            <div class="form-detail-cut">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-xs detail-btn">查看详情</button>
+                                    <button type="button"  class="btn btn-xs dropdown-toggle"
+                                            data-toggle="dropdown"  >
+                                        <span class="caret"></span>
+                                    </button>
+
+                                    <ul class="dropdown-menu nav-lengthwise " role="menu">
+                                        <li><a href="#">A瓦详情</a></li>
+                                        <li><a href="#"> B瓦详情</a></li>
+                                        <li><a href="#"> E瓦详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <input type="radio" name="boxtype" id="6"><label for="6">A瓦优质</label>
+                            </div>
+                            <div class="col-xs-7">
+                                <input type="radio" name="boxtype" id="7"><label for="7">B瓦优质</label>
+                            </div>
+                            <div class="col-xs-7">
+                                <input type="radio" name="boxtype" ID="8"><label for="8">E瓦优质</label>
+                            </div>
+                            <br>
+                            <div class="col-xs-7">
+                                <input type="radio" name="boxtype" ID="9"><label for="9">AB瓦优质</label>
+                            </div>
+                            <div class="col-xs-7">
+                                <input type="radio" name="boxtype" ID="10"><label for="10">BE瓦优质</label>
+                            </div>
+
+                            <div class="nextstep">
+                                <button class="nextstep-btn">下一步</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+
+
+        </div>
+    </main>
+
+
+
+
+
+    <footer class="footer-widest">
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="footer-warp-content">
+                <div class="col-xs-4">
+                    <div class="footer-warp-content-tittle">
+                    51包装网— 纸箱包装首选服务平台
+                     </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="footer-warp-content-aboutus">
+                        <span><ul class="list-inline">
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">配送流程</a></li>
+                            <li><a href="#">联系我们</a></li><br>
+                            <li><a href="#">下单指南</a></li>
+                            <li><a href="#">媒体介绍</a></li>
+                        </ul>
+                            </span>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-4">
+                <div class="footer-warp-content-tel">
+                    <div class="footer-warp-content-tel-text">
+                        <ul>
+                            <li>TEL：400-0000-000</li>
+                            <li>企业QQ：123456789</li>
+                            <li>微信号：XXXXXXX</li>
+                        </ul>
+                    </div>
+                    <div class="footer-warp-content-tel-pic">
+                        <img src="img/erweima-task10.png">
+                    </div>
+
+                </div>
+             </div>
+            </div>
+            <div class="copyright">
+                <span>北京五一包装科技有限公司Copyright ©2015&nbsp;&nbsp;&nbsp;&nbsp;51baozhuang.com015   All rights reserved.   京icp备99999999-1</span>
+            </div>
+        </nav>
+    </footer>
+
+            <footer class="footer-narrowest">
+                <nav class="navbar navbar-default navbar-fixed-bottom">
+                    <div class="footer-warp-content">
+                        <div class="col-xs-12">
+                            <div class="footer-warp-content-tittle">
+                                51包装网— 纸箱包装首选服务平台
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="footer-warp-content-aboutus">
+                        <span><ul class="list-inline">
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">配送流程</a></li>
+                            <li><a href="#">联系我们</a></li><br>
+                            <li><a href="#">下单指南</a></li>
+                            <li><a href="#">媒体介绍</a></li>
+                        </ul>
+                            </span>
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div class="footer-warp-content-tel">
+                                <div class="footer-warp-content-tel-text">
+                                    <ul>
+                                        <li>TEL：400-0000-000</li>
+                                        <li>企业QQ：123456789</li>
+                                        <li>微信号：XXXXXXX</li>
+                                    </ul>
+                                </div>
+                                <div class="footer-warp-content-tel-pic">
+                                    <img src="img/erweima-task10.png">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            <div class="copyright">
+                <span>北京五一包装科技有限公司Copyright ©2015&nbsp;&nbsp;&nbsp;&nbsp;51baozhuang.com015   All rights reserved.   京icp备99999999-1</span>
+            </div>
+
+        </nav>
+    </footer>
+
+
+</body>
+</html>

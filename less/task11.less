@@ -1,0 +1,75 @@
+@backgroundcolor: #5fc0cd;
+@bodycolor: #eff0f4;
+@hovercolor:#0ca299;
+
+@color: #ffffff;
+
+@height:1rem;
+
+html{
+  font-size: 125%;
+}
+body{
+  margin: 0;
+  background: @bodycolor;
+}
+
+.header-warp {
+  display: flex;justify-content: space-between;
+  height:@height*4;width:100%;
+  background: @backgroundcolor;color: @color;
+  .close,.signin,.register{
+    display: flex;height: 100%;padding:0 @height;
+    align-items: center;
+    border: none;background:@backgroundcolor;color: @color;
+    font-size: @height;
+    &:hover{outline: none;background:@hovercolor ;
+}
+  }
+}
+
+.main-warp{
+  height: @height*9.5;
+  .inputnum,.inputcode{
+    display: flex;align-items: center;
+    height: @height*4;margin-top: @height*.75;background: @color;
+    .icon{
+      display: inline-flex;justify-content: center;align-items: center;
+      width: @height*5.5;height: 100%;
+    }
+    .text{
+      display: inline-block;
+      height: @height*2.5 ;padding-left: @height;
+      border: none;border-left: @height*.1 solid @bodycolor ;
+      &:focus{
+        outline:none;
+      }
+    }
+  }
+
+}
+
+.footer-warp{
+  font-size: @height;
+  .login{
+    height:@height*4;width: 100%;
+    font-size: inherit;
+    background: @backgroundcolor;color: @color;
+    border: none;
+    &:hover{
+      background: @hovercolor;
+    }
+  }
+  .forgot {
+    float: right;padding: @height @height*1.5;
+    a {
+
+      color: @backgroundcolor;
+      font-size: inherit;
+      text-decoration: none;
+      &:hover{
+        color: @hovercolor;
+      }
+    }
+  }
+}
