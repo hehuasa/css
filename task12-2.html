@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.4,minimum-scale=0,maximum=1.0,user-scalable=no">
+
+    <link rel="stylesheet" href="css/task12-2.css">
+    <title>task12-2</title>
+
+    <script type=text/javascript>
+
+                          function menuFix(){
+            var sfEls = document.getElementById("nav").getElementsByTagName("li");
+            for (var i=0; i<sfEls.length; i++){
+        sfEls[i].onmouseover=function(){
+            this.className+=(this.className.length>0? " ": "") + "sfhover";
+        }
+        sfEls[i].onMouseDown=function(){
+            this.className+=(this.className.length>0? " ": "") + "sfhover";
+        }
+        sfEls[i].onMouseUp=function(){
+            this.className+=(this.className.length>0? " ": "") + "sfhover";
+        }
+        sfEls[i].onmouseout=function(){
+            this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),
+            "");
+        }
+        }
+        }
+        window.onload=menuFix;
+        </script>
+
+
+</head>
+<body>
+
+    <header>
+        <div class="header-tittle">
+            <div class="header-btn">
+                <button type="button" class="btn1">找护工</button>
+                <button type="button" class="btn2">找雇主</button>
+            </div>
+            <button type="button" class="map">
+                <img src="img/location-task12.png">
+            </button>
+            </div>
+
+
+
+
+</header>
+
+    <main>
+
+        <ul id="nav">
+        <li>所在地
+            <span class="triangle4 triangle_down"></span>
+            <ul>
+                <li style="border-top:.01rem solid #afbac0 ">成都</li>
+                <li>上海</li>
+                <li style="border-bottom:.01rem solid #afbac0">北京</li>
+            </ul>
+        </li>
+        <li>食宿
+            <span class="triangle4 triangle_down"></span>
+            <ul>
+                <li style="border-top:.05rem solid #afbac0 ">包吃</li>
+                <li>包住</li>
+                <li style="border-bottom:.05rem solid #afbac0">包吃住</li>
+            </ul>
+        </li>
+
+        <li style="border: none">病人情况
+            <span class="triangle4 triangle_down"></span>
+            <ul>
+                <li style="border-top:.05rem solid #afbac0 ">好</li>
+                <li>差</li>
+                <li style="border-bottom:.05rem solid #afbac0">中等</li>
+            </ul>
+        </li>
+    </ul>
+        <div class="main-content">
+        <div class="content-tittle">服务日期<div class="spirit-date"></div> </div>
+        <div class="content-tittle"><div class="spirit-next"></div>
+            <span class="content-date">2015-7-5 至 2015-7-12</span>
+            <span class="content-price">35元/小时</span>
+        </div>
+        <div class="content-location">北京.通州.果园<div class="spirit-location"></div></div>
+
+    </div>
+        <div class="main-content">
+        <div class="content-tittle">服务日期<div class="spirit-date"></div> </div>
+        <div class="content-tittle"><div class="spirit-next"></div>
+            <span class="content-date">2015-7-5 至 2015-7-12</span>
+            <span class="content-price">35元/小时</span>
+        </div>
+        <div class="content-location">北京.通州.果园<div class="spirit-location"></div></div>
+
+    </div>
+        <div class="main-content">
+        <div class="content-tittle">服务日期<div class="spirit-date"></div> </div>
+        <div class="content-tittle"><div class="spirit-next"></div>
+            <span class="content-date">2015-7-5 至 2015-7-12</span>
+            <span class="content-price">35元/小时</span>
+        </div>
+        <div class="content-location">北京.通州.果园<div class="spirit-location"></div></div>
+
+    </div>
+        <div class="main-content">
+        <div class="content-tittle">服务日期<div class="spirit-date"></div> </div>
+        <div class="content-tittle"><div class="spirit-next"></div>
+            <span class="content-date">2015-7-5 至 2015-7-12</span>
+            <span class="content-price">35元/小时</span>
+        </div>
+        <div class="content-location">北京.通州.果园<div class="spirit-location"></div></div>
+
+    </div>
+        <div class="main-content">
+        <div class="content-tittle">服务日期<div class="spirit-date"></div> </div>
+        <div class="content-tittle"><div class="spirit-next"></div>
+            <span class="content-date">2015-7-5 至 2015-7-12</span>
+            <span class="content-price">35元/小时</span>
+        </div>
+        <div class="content-location">北京.通州.果园<div class="spirit-location"></div></div>
+
+    </div>
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="footer-warp">
+            <button type="button" class="homepage">
+                <img src="img/house.png">
+                首页
+            </button>
+            <button type="button" class="write"> <img src="img/write.png"></button>
+            <button class="myspace">
+                <img src="img/body.png">
+                我的
+            </button>
+        </div>
+    </footer>
+
+
+</body>
+</html>
