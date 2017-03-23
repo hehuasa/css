@@ -1,0 +1,71 @@
+.m-warp{
+    width:100%;margin: 0 auto
+}
+.m-warp-path{
+    width: 90%;height:4rem;line-height: 4rem;margin: 0 auto;
+    border-bottom: .05rem solid #c9c8cb;font-family:"黑体",sans-serif
+}
+.m-warp-classification{
+    width: 90%;height:4rem;margin: 0 auto;line-height: 4rem;
+    border-bottom: .05rem solid #c9c8cb
+}
+.m-warp-classification-direction
+    {float: left;color:#c9c8cb; }
+.m-warp-classification ul li
+    {padding-left: .5rem}
+.m-warp-classification ul li a
+    {text-decoration: none;color:#000000 }
+.m-warp-classification ul li a:hover
+    {background:#29b078 ;color:#ffffff}
+.m-warp-tittle{
+    width: 100%;height: 4rem;line-height: 4rem;margin-bottom: 2rem;
+    border-bottom: .05rem solid #c9c8cb;font-family:"黑体",sans-serif
+}
+
+
+.m-warp-widest{
+    width: 90%;margin: 0 auto;
+}
+.m-warp-medium{
+    width: 90%;margin: 0 auto
+}
+.m-warp-narrowest{
+    width: 90%;margin: 0 auto
+}
+
+.m-warp-content{
+    margin: 0 auto;width: 100%;display: inline-block;
+}
+
+@media (min-width: 1200px) {
+    .m-warp-medium{display: none}
+    .m-warp-narrowest{display: none}
+
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+    .m-warp-widest{display: none}
+    .m-warp-narrowest{display: none}
+
+}
+@media (max-width: 800px){
+    .m-warp-widest{display: none}
+    .m-warp-medium{display: none}
+
+}
+.m-warp-content-detail
+    {height: 22.25rem;width: 17rem;margin: 0 auto;
+    border:.05rem solid #c9c8cb;border-radius: 1% }
+.m-warp-content-detail-pic
+    {height: 7rem;width: 7rem;float: left;margin:.75rem .5rem }
+.m-warp-content-detail-pic img{height: 7rem;width: 7rem}
+.m-warp-content-detail-tittle
+    {display: table-cell;height: 8.5rem;width: 10.9rem;vertical-align: middle;font-size: .7rem }
+.m-warp-content-detail table
+    {width: 17rem;border-collapse:collapse;;vertical-align: middle }
+.m-warp-content-detail table tr
+    {height: 2rem}
+.m-warp-content-detail table tr td
+{width: 9.5rem;padding: .5rem;color: #b0b0b0;font-size: 12px}
+.m-empty{display: inline-block;width: 50%}
+
+.m-warp-content-detail:hover{;background-color:rgba(61,61,61,0.7)}
