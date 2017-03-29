@@ -1,0 +1,87 @@
+/* vim: set et sw=4 ts=4 sts=4 fdm=marker ff=unix fenc=utf8 */
+/**
+* 格栅系统 Grid System
+*
+* 根据 Taobao B2C 栅格系统规范制定
+*
+* @change
+* 2008-10-15
+*      解决在 Firefox2 下文字全选的 Bug
+*
+* 2008-09-19
+*      初始化版本，使用“伪浮动定位布局”
+*
+* @author  i.feelinglucky@gmail.com
+* @since   2008-09-19
+* @link    http://www.gracecode.com/
+* @version $Id: grid.source.css 105 2008-10-15 12:51:23Z i.feelinglucky $
+*/
+
+/**
+* 针对 Firefox2 的 Hack
+*
+
+/**
+* 目前制定的是 950px 宽度
+*/
+
+/**
+* 将页面分成了 12 份，同时指定每个栅格的基本样式
+*/
+.column-01, .column-02, .column-03, .column-04, .column-05,
+.column-06, .column-07, .column-08, .column-09, .column-10,
+.column-11, .column-12 {
+  float:left;
+}
+.column-center{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.column-01 {
+  width: 8.3333%;.column-center
+}
+
+.column-02 {
+  width: 16.6667%;.column-center
+}
+
+.column-03 {
+  width: 25%;.column-center
+}
+
+ .column-04 {
+  width: 33.3333%;.column-center
+}
+
+ .column-05 {
+  width: 41.6667%;.column-center
+}
+
+ .column-06 {
+  width: 50%;.column-center
+}
+
+ .column-07 {
+  width: 58.3333%;.column-center
+}
+
+ .column-08 {
+  width: 66.6667%;.column-center
+}
+
+ .column-09 {
+  width: 75%;.column-center
+}
+
+.column-10 {
+  width: 83.3333%;.column-center
+}
+
+ .column-11 {
+  width: 91.6667%;.column-center
+}
+
+ .column-12 {
+  width: 100%;.column-center
+}

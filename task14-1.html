@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/task13-reset.css">
+    <link rel="stylesheet" href="css/task14-layout.css">
+    <link rel="stylesheet" href="css/column.css">
+    <link rel="stylesheet" href="css/task14-module.css">
+    <link rel="stylesheet" href="css/font.css">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <div class="header-warp">
+        <div class="guild flex-around flex-middle">
+            <div class="font-s green">
+                客服电话：400400400
+            </div>
+            <div>
+                <img src="img/penguin.png">
+                <img src="img/weibo.png">
+                <img src="img/weixin.png">
+            </div>
+
+        </div>
+        <div class="nav">
+            <button type="button" class="position-left" >
+                <img src="img/jinengshu.png">
+            </button >
+            <div class="nav-bar position-right">
+                <input type="button" class="nav-button  font-xl white heiti pointer"
+                       onclick="window.open('task14-1.html')" value="首页"></input>
+                <input type="button" class="nav-button  font-xl white heiti pointer"
+                       onclick="window.open('task14-3.html')" value="职业"></input>
+                <input type="button" class="nav-button  font-xl white heiti pointer"
+                       onclick="window.open('task14-1.html')" value="推荐"></input>
+                <input type="button" class="nav-button  font-xl white heiti pointer"
+                       onclick="window.open('task14-2.html')" value="关于"></input>
+            </div>
+            <div  class="nav-collapse" >
+                <button type="button" style="margin: .2rem 10% .2rem 0">
+                    <img src="img/menu-8.png">
+                </button>
+                <ul>
+                    <li class=" flex-center-middle borderline-bottom-solid"><a href="task14-1.html" class=" font-xl white heiti">首页</a></li>
+                    <li class=" flex-center-middle borderline-bottom-solid"><a href="task14-3.html"  class=" font-xl white heiti">职业</a></li>
+                    <li class=" flex-center-middle borderline-bottom-solid"><a href="task14-1.html" class=" font-xl white heiti">推荐</a></li>
+                    <li class=" flex-center-middle borderline-bottom-solid"><a href="task14-2.html" class=" font-xl white heiti">关于</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</header>
+<main>
+    <div class="main-warp">
+        <div class="carouselbox">
+            <div class="carousel-trans">
+                <div><img src="img/page1-background.png"></div>
+                <div><img src="img/page1-background.png"></div>
+                <div><img src="img/page1-background.png"></div>
+            </div>
+            <div class="position-middle-center" style="text-align: right;width: 70%">
+                <span class="introduce1 white heiti">作为你一个初级菜鸟，你是否想要了解</span><br>
+                <span class="introduce2  white heiti"><span class=" introduce3 white heiti">50万</span>年薪的程序员,都会哪些技能呢？</span>
+            </div>
+            <button  type="button" class="pre position-left position-middle">
+                <img src="img/arrow-left.png">
+            </button>
+            <button type="button" class="next position-right  position-middle">
+                <img src="img/arrow-right.png">
+            </button>
+        </div>
+        <script>
+            (function () {
+                var carousel = document.querySelector(".carousel-trans");
+                var img = carousel.querySelectorAll("div");
+                var len = img.length;
+                [].forEach.call(img, function (item) {
+                    item.style.width = (100 / len) + "%";
+                });
+                carousel.style.left = "0%";
+                carousel.style.width = (100 * len) + "%";
+                var pre = document.querySelector(".pre");
+                var next = document.querySelector(".next");
+                var i = 0;
+                next.onclick = function () {
+                    var left = carousel.style.left;
+                    if (i < len - 1) {
+                        carousel.style.left = (parseInt(left) - 100) + "%";
+                        i++;
+                    }
+                    else if (i == len - 1) {
+                        carousel.style.left = "0%";
+                        i = 0;
+                    }
+                };
+                pre.onclick = function () {
+                    var left = carousel.style.left;
+                    if (i > 0) {
+                        carousel.style.left = (parseInt(left) + 100) + "%";
+                        i--;
+                    } else if (i == 0) {
+                        carousel.style.left = -parseInt(carousel.style.width) + 100 + "%";
+                        i = len - 1;
+                    }
+                };
+            }());
+        </script>
+        <div class="merits">
+            <div class=" merits-widest">
+            <div class=" merits-content column-03 flex-column flex-around">
+            <div><img src="img/rocket.png"></div>
+            <div class="font-l heiti">高效</div>
+            <div class="font-s gray   text">将五到七年的成长时间，缩短到一年到三年。</div>
+            </div>
+            <div class=" merits-content column-03 flex-column flex-around">
+                <div><img src="img/books.png"></div>
+                <span class="font-l heiti">规范</span>
+                <span class="font-s gray  text">标准的实战教程，不会走弯路。</span>
+            </div>
+            <div class=" merits-content column-03 flex-column flex-around">
+                <div><img src="img/shape.png"></div>
+                <span class="font-l heiti">人脉</span>
+                <span class="font-s gray   text">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</span>
+            </div>
+            <div class=" merits-content column-03 flex-column flex-center flex-align-start borderline-left-dashed" style="margin-left: -0.01rem">
+             <div class="green font-l heiti">&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 0.13rem;height: 0.13rem" src="img/xiaoren.png"> 12400</div> <br>
+               <div class="font-s gray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;累计在线人数</div>
+                <br>
+                <br>
+              <div class="green font-l heiti">&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 0.13rem;height: 0.13rem"src="img/xiaoren.png"> 12400</div> <br>
+                <div class="font-s gray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学员已找到满意工作</div>
+            </div>
+            </div>
+            <div class=" merits-medium">
+
+                <div class=" merits-content column-06 flex-column flex-around">
+                    <div><img src="img/rocket.png"></div>
+                    <div class="font-l heiti">高效</div>
+                    <div class="font-s gray   text">将五到七年的成长时间，缩短到一年到三年。</div>
+                </div>
+                <div class=" merits-content column-06 flex-column flex-around">
+                    <div><img src="img/books.png"></div>
+                    <span class="font-l heiti">规范</span>
+                    <span class="font-s gray  text">标准的实战教程，不会走弯路。</span>
+                </div>
+                <div class=" merits-content column-06 flex-column flex-around">
+                    <div><img src="img/shape.png"></div>
+                    <span class="font-l heiti">人脉</span>
+                    <span class="font-s gray   text">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</span>
+                </div>
+                <div class=" merits-content column-06 flex-column flex-center flex-align-center borderline-left-dashed" style="margin-left: -0.01rem">
+                    <div class="green font-l heiti"><img style="width: 0.13rem;height: 0.13rem"src="img/xiaoren.png"> 12400</div> <br>
+                    <div class="font-s gray">累计在线人数</div>
+                    <br>
+                    <br>
+                    <div class="green font-l heiti"><img style="width: 0.13rem;height: 0.13rem"src="img/xiaoren.png"> 12400</div> <br>
+                    <div class="font-s gray">学员已找到满意工作</div>
+                </div>
+            </div>
+            <div class=" merits-narrowest">
+
+                <div class=" merits-content column-12 flex-column flex-around">
+                    <div><img src="img/rocket.png"></div>
+                    <div class="font-l heiti">高效</div>
+                    <div class="font-s gray   text">将五到七年的成长时间，缩短到一年到三年。</div>
+                </div>
+                <div class=" merits-content column-12 flex-column flex-around">
+                    <div><img src="img/books.png"></div>
+                    <span class="font-l heiti">规范</span>
+                    <span class="font-s gray  text">标准的实战教程，不会走弯路。</span>
+                </div>
+                <div class=" merits-content column-12 flex-column flex-around">
+                    <div><img src="img/shape.png"></div>
+                    <span class="font-l heiti">人脉</span>
+                    <span class="font-s gray  text">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</span>
+                </div>
+                <div class=" merits-content column-12 flex-column flex-center flex-align-center borderline-left-dashed" style="margin-left: -0.01rem">
+                    <div class="green font-l heiti"><img style="width: 0.13rem;height: 0.13rem"src="img/xiaoren.png"> 12400</div> <br>
+                    <div class="font-s gray">累计在线人数</div>
+                    <br>
+                    <br>
+                    <div class="green font-l heiti"><img style="width: 0.13rem;height: 0.13rem"src="img/xiaoren.png"> 12400</div> <br>
+                    <div class="font-s gray">学员已找到满意工作</div>
+                </div>
+            </div>
+        </div>
+        <div class="process">
+            <div class="content-tittle flex-center-middle heiti font-l black">
+                如何学习
+            </div>
+            <div class="process-widest">
+                <div class="column-03">
+                <div class="step flex-left flex-align-center" >
+                    <div class="num green font-l flex-center-middle">1</div>
+                    <div class="flex-center-middle step-text text-left">
+                        匹配你现在的个人情况寻找适合自己的岗位
+                    </div>
+                    <div class="icon">
+                        <img src="img/jiantou-task8.png">
+                    </div>
+                </div>
+                </div>
+                <div class="column-03">
+                    <div class="step flex-left flex-align-center" >
+                        <div class="num green font-l flex-center-middle">2</div>
+                        <div class="flex-center-middle step-text text-left">
+                            了解职业前景薪金待遇、竞争压力等
+                        </div>
+                        <div class="icon">
+                            <img src="img/jiantou-task8.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="column-03">
+                    <div class="step flex-left flex-align-center" >
+                        <div class="num green font-l flex-center-middle">3</div>
+                        <div class="flex-center-middle step-text text-left">
+                            掌握行业内顶级技能
+                        </div>
+                        <div class="icon">
+                            <img src="img/jiantou-task8.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="column-03">
+                    <div class="step flex-left flex-align-center" >
+                        <div class="num green font-l flex-center-middle">4</div>
+                        <div class="flex-center-middle step-text text-left">
+                            查看职业目标任务
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column-03">
+                    <div class="step flex-left flex-align-center" >
+                        <div class="num green font-l flex-center-middle">5</div>
+                        <div class="flex-center-middle step-text text-left">
+                            参考学习资源，掌握 技能点，逐个完成任务
+                        </div>
+                        <div class="icon">
+                            <img src="img/jiantou-task8.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="column-03">
+                    <div class="step flex-left flex-align-center" >
+                        <div class="num green font-l flex-center-middle">6</div>
+                        <div class="flex-center-middle step-text text-left">
+                          加入班级，和小伙伴们互帮互助，一块学习
+                        </div>
+                        <div class="icon">
+                            <img src="img/jiantou-task8.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="column-03">
+                    <div class="step flex-left flex-align-center" >
+                        <div class="num green font-l flex-center-middle">7</div>
+                        <div class="flex-center-middle step-text text-left">
+                            选择导师，一路引导， 加速自己成长
+                        </div>
+                        <div class="icon">
+                            <img src="img/jiantou-task8.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="column-03">
+                    <div class="step flex-left flex-align-center" >
+                        <div class="num green font-l flex-center-middle">8</div>
+                        <div class="flex-center-middle step-text text-left">
+                            完成职业技能，升级业界大牛
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="process-medium">
+                <div class="column-06">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">1</div>
+                        <div class="flex-center-middle step-text text-left">
+                            匹配你现在的个人情况寻找适合自己的岗位
+                        </div>
+                    </div>
+                </div>
+                <div class="column-06">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">2</div>
+                        <div class="flex-center-middle step-text text-left">
+                            了解职业前景薪金待遇、竞争压力等
+                        </div>
+                    </div>
+                </div>
+                <div class="column-06">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">3</div>
+                        <div class="flex-center-middle step-text text-left">
+                            掌握行业内顶级技能
+                        </div>
+                    </div>
+                </div>
+                <div class="column-06">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">4</div>
+                        <div class="flex-center-middle step-text text-left">
+                            查看职业目标任务
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column-06">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">5</div>
+                        <div class="flex-center-middle step-text text-left">
+                            参考学习资源，掌握 技能点，逐个完成任务
+                        </div>
+                    </div>
+                </div>
+                <div class="column-06">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">6</div>
+                        <div class="flex-center-middle step-text text-left">
+                            加入班级，和小伙伴们互帮互助，一块学习
+                        </div>
+                    </div>
+                </div>
+                <div class="column-06">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">7</div>
+                        <div class="flex-center-middle step-text text-left">
+                            选择导师，一路引导， 加速自己成长
+                        </div>
+                    </div>
+                </div>
+                <div class="column-06">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">8</div>
+                        <div class="flex-center-middle step-text text-left">
+                            完成职业技能，升级业界大牛
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="process-narrowest">
+                <div class="column-12">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">1</div>
+                        <div class="flex-center-middle step-text text-left">
+                            匹配你现在的个人情况寻找适合自己的岗位
+                        </div>
+                    </div>
+                </div>
+                <div class="column-12">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">2</div>
+                        <div class="flex-center-middle step-text text-left">
+                            了解职业前景薪金待遇、竞争压力等
+                        </div>
+                    </div>
+                </div>
+                <div class="column-12">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">3</div>
+                        <div class="flex-center-middle step-text text-left">
+                            掌握行业内顶级技能
+                        </div>
+                    </div>
+                </div>
+                <div class="column-12">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">4</div>
+                        <div class="flex-center-middle step-text text-left">
+                            查看职业目标任务
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column-12">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">5</div>
+                        <div class="flex-center-middle step-text text-left">
+                            参考学习资源，掌握 技能点，逐个完成任务
+                        </div>
+                    </div>
+                </div>
+                <div class="column-12">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">6</div>
+                        <div class="flex-center-middle step-text text-left">
+                            加入班级，和小伙伴们互帮互助，一块学习
+                        </div>
+                    </div>
+                </div>
+                <div class="column-12">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">7</div>
+                        <div class="flex-center-middle step-text text-left">
+                            选择导师，一路引导， 加速自己成长
+                        </div>
+                    </div>
+                </div>
+                <div class="column-12">
+                    <div class="step flex-center-middle" >
+                        <div class="num green font-l flex-center-middle">8</div>
+                        <div class="flex-center-middle step-text text-left">
+                            完成职业技能，升级业界大牛
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="exhibit">
+            <div class="content-tittle flex-center-middle heiti font-l black">优秀学员展示</div>
+            <div class="exhibit-widest">
+                <div class="column-03 flex-center">
+                <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                    <div class="pic"><img src="img/touxiang1.png"></div>
+                    <div class=" font-l black">技术顾问：罗大佑</div>
+                    <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                        从事虚拟主机、云服务器、域名。曾任新网
+                        高级技术经理，负责技术研
+                        发、团队管理与建设。</div>
+                </div>
+                </div>
+                <div class="column-03 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang2.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+                <div class="column-03 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang3.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+                <div class="column-03 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang4.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="exhibit-medium">
+                <div class="column-06 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang1.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+                <div class="column-06 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang1.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+                <div class="column-06 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang1.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+                <div class="column-06 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang1.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="exhibit-narrowest">
+                <div class="column-12 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang1.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+                <div class="column-12 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang1.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+                <div class="column-12 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang1.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+                <div class="column-12 flex-center">
+                    <div class="exhibit-content  borderline-solid
+                flex-column flex-between flex-align-center">
+                        <div class="pic"><img src="img/touxiang1.png"></div>
+                        <div class=" font-l black">技术顾问：罗大佑</div>
+                        <div class="gray font-nomal line-height-nomal">百度技术总监：互联网基础服务领域，
+                            从事虚拟主机、云服务器、域名。曾任新网
+                            高级技术经理，负责技术研
+                            发、团队管理与建设。</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="cooperatives">
+            <div class="content-tittle flex-center-middle
+            heiti font-l black">
+                战略合作企业
+            </div>
+            <div class="cooperatives-content">
+                    <button type="button" class="cooperatives-btn borderline-solid">
+                        <img src="img/jinshanyun.png">
+                    </button>
+                <button type="button" class="cooperatives-btn borderline-solid">
+                    <img src="img/alibaba.png">
+                </button>
+                <button type="button" class="cooperatives-btn borderline-solid">
+                    <img src="img/huanxin.png">
+                </button>
+                <button type="button" class="cooperatives-btn borderline-solid">
+                    <img src="img/qiniu.png">
+                </button>
+                <button type="button" class="cooperatives-btn borderline-solid">
+                    <img src="img/ronglian.png">
+                </button>
+            </div>
+
+        </div>
+        <div class="partnerlink">
+            <div class="content-tittle black font-l heiti">
+                友情衔接
+            </div>
+            <div class="partnerlink-widest">
+
+                 <div class="column-06">
+                <ul class="flex-between"  >
+                        <li class="under-line"><a href="#">手机软件</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+
+            </ul>
+            </div>
+                <div class="column-06">
+                    <ul class="flex-between"  >
+                        <li class="under-line"><a href="#">手机软件</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+
+                    </ul>
+                </div>
+                <div class="column-06">
+                    <ul class="flex-between"  >
+                        <li class="under-line"><a href="#">手机软件</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+
+                    </ul>
+                </div>
+                <div class="column-06">
+                    <ul class="flex-between"  >
+                        <li class="under-line"><a href="#">手机软件</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="partnerlink-medium">
+
+                <div class="column-12">
+                    <ul class="flex-between"  >
+                        <li class="under-line"><a href="#">手机软件</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+
+                    </ul>
+                </div>
+                <div class="column-12">
+                    <ul class="flex-between"  >
+                        <li class="under-line"><a href="#">手机软件</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+
+                    </ul>
+                </div>
+                <div class="column-12">
+                    <ul class="flex-between"  >
+                        <li class="under-line"><a href="#">手机软件</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+
+                    </ul>
+                </div>
+                <div class="column-12">
+                    <ul class="flex-between"  >
+                        <li class="under-line"><a href="#">手机软件</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+                        <li class="under-line"><a href="#">教师招聘</a> </li>
+                        <li class="under-line"><a href="#">找工作</a> </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</main>
+
+
+
+
+<footer>
+    <div class="footer-warp">
+        <div class="footer-warp-detail flex-around">
+            <div class="aboutus flex-column flex-around flex-align-start">
+                <div class="white font-nomal">技能树──改变你我</div>
+                <div class="white" >
+                    <a href="#" class="white font-s">关于我们</a> |
+                    <a href="#" class="white font-s">联系我们</a> |
+                    <a href="#" class="white font-s">合作企业</a>
+                </div>
+            </div>
+            <div class="ourwebsite  flex-column flex-around flex-align-start">
+                <div class="white font-nomal">旗下网站</div>
+                <div>
+                    <a href="#" class="white font-s">草船云孵化器</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="white font-s">最强IT训练营</a>
+                </div>
+                <div>
+                    <a href="#" class="white font-s">葡萄藤轻游戏</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="white font-s">桌游精灵</a>
+                </div>
+            </div>
+            <div class="wechat flex-column flex-around flex-align-end">
+                <div class="white font-nomal">微信公众平台</div>
+                <img src="img/wechat.png">
+            </div>
+        </div>
+        <div class="copyright white font-xs  flex-center-middle borderline-top-solid-green-light">
+            Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP备13005880号
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>
